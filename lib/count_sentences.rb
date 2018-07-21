@@ -19,28 +19,7 @@ class String
   end
 
   def exclamation?
-
-  end
-
-  def count_sentences
-
-  end
-end
-
-require 'pry'
-
-class String
-
-  def sentence?
-
-  end
-
-  def question?
-	
-  end
-
-  def exclamation?
-	if self.end_with?("!")
+    if self.end_with?("!")
     	return true
     else
     	return false 
@@ -48,7 +27,10 @@ class String
   end
 
   def count_sentences
-  	self.split(/[".?!"]/).select { |item| item != "" }.count
+    self.split(/[".?!"]/).select { |item| item != "" }.count
   end
 
+#binding.pry
+
 end
+
